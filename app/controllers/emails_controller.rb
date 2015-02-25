@@ -6,4 +6,10 @@ class EmailsController < ApplicationController
       email_params[:body]
     ).deliver
   end
+
+  private
+
+  def email_params
+    params.permit(:to, :subject, :body)
+  end
 end
