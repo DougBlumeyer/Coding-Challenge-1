@@ -1,5 +1,5 @@
 class AuthMailer < ActionMailer::Base
-  default from: "coding_challenge_1@appacademy.io"
+  default from: "noreply@example.com"
 
   def email(to, subject, body)
     @body = body

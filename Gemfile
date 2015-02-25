@@ -25,11 +25,23 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
-gem 'letter_opener', group: :development
 gem 'rack-test', group: :test
 
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
+  # gem 'debugger'
+
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0.0.beta4'
+  # gem 'byebug'
+  gem 'pry-rails'
+  gem 'quiet_assets'
+end
+
+group :development do
+  gem 'binding_of_caller'
+  gem 'better_errors'
+  gem 'letter_opener'
 end
 
 # Use ActiveModel has_secure_password
